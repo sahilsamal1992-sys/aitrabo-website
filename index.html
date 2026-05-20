@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AITrabo — AI-powered options trading bot for Interactive Brokers. Trade smarter across US, EU, UK, CA, AU, HK and SG markets." />
+  <title>AITrabo — AI-Powered Options Trading Bot for IBKR</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">AI<span>Trabo</span></a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#markets">Markets</a></li>
+        <li><a href="#how">How it Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#pricing" class="btn btn-primary nav-cta">Get Started →</a>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-inner">
+      <div class="badge">🤖 AI-Powered &nbsp;·&nbsp; IBKR Connected &nbsp;·&nbsp; 7 Global Markets</div>
+      <h1>Trade Options Like<br /><span class="gradient-text">a Professional</span></h1>
+      <p class="hero-sub">
+        AITrabo is an intelligent options trading bot for Interactive Brokers —
+        15 proven strategies, real-time AI signals, automatic execution.
+        Works while you sleep.
+      </p>
+      <div class="hero-ctas">
+        <a href="#pricing" class="btn btn-primary btn-lg">Start for $49/mo →</a>
+        <a href="#how" class="btn btn-ghost btn-lg">See How It Works</a>
+      </div>
+      <div class="hero-note">✓ 7-day free trial &nbsp; ✓ Cancel anytime &nbsp; ✓ Paper trading mode included</div>
+
+      <!-- terminal preview -->
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">AITrabo — Live</span>
+        </div>
+        <div class="terminal-body">
+          <div class="t-line"><span class="t-time">09:31:02</span> <span class="t-info">Regime: BULLISH &nbsp;·&nbsp; VIX: 14.3 &nbsp;·&nbsp; HV Rank: 38%</span></div>
+          <div class="t-line"><span class="t-time">09:31:05</span> <span class="t-ok">✅ AAPL — BULL_CALL_SPREAD selected &nbsp;·&nbsp; Score 7.8/10</span></div>
+          <div class="t-line"><span class="t-time">09:31:06</span> <span class="t-ok">✅ Chart analysis PASSED &nbsp;·&nbsp; RSI:42 MACD:↑ BB%B:0.22</span></div>
+          <div class="t-line"><span class="t-time">09:31:07</span> <span class="t-ok">✅ Order placed — 2 lots @ $1.45 debit &nbsp;·&nbsp; SL: $0.72</span></div>
+          <div class="t-line"><span class="t-time">09:45:18</span> <span class="t-warn">⚠ SPY — REGIME BLOCKED (bearish filter active)</span></div>
+          <div class="t-line"><span class="t-time">10:02:44</span> <span class="t-ok">✅ NVDA — IRON_CONDOR &nbsp;·&nbsp; Credit $3.20 &nbsp;·&nbsp; 3 lots</span></div>
+          <div class="t-line blink"><span class="t-time">10:15:01</span> <span class="t-info">Scanning universe… 47 symbols checked</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS ─────────────────────────────────────────────── -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">15+</div>
+        <div class="stat-label">Trading Strategies</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">7</div>
+        <div class="stat-label">Global Markets</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Automated Trading</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">AI</div>
+        <div class="stat-label">Signal Engine</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ─────────────────────────────────────────────── -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Features</div>
+        <h2>Everything you need to trade options professionally</h2>
+        <p>Built by traders, for traders. AITrabo replicates what a professional options desk does — automatically.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3>AI Strategy Selection</h3>
+          <p>Machine learning model picks the best strategy for current market conditions — Iron Condor, Bull Call Spread, Calendar, Straddle and 11 more.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Option Chart Analysis</h3>
+          <p>Every leg is analysed with RSI, MACD, Bollinger Bands, VWAP, Supertrend and Volume Profile before entry. No blind trades.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Smart Risk Management</h3>
+          <p>Automatic trailing stop-loss, profit targets, position sizing based on your capital. Max drawdown protection built in.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Multi-Market Support</h3>
+          <p>Trade US, EU, UK, Canadian, Australian, Hong Kong, and Singapore markets from one bot — all through your IBKR account.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>Regime Filter</h3>
+          <p>Detects market regime (bullish/bearish/sideways) using VIX, HV rank, and macro signals. Only trades in high-probability conditions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🖥️</div>
+          <h3>Desktop App</h3>
+          <p>Beautiful dark-theme desktop app with live dashboard, equity curve, position tracker, and real-time log. Windows & Mac.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3>Fully Configurable</h3>
+          <p>Set your capital, risk %, strategies, symbols, and trading hours from the settings panel. No coding required.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📄</div>
+          <h3>Paper Trading Mode</h3>
+          <p>Test the bot risk-free with IBKR's paper trading account before going live. See real signals, zero real money.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔔</div>
+          <h3>Telegram Alerts</h3>
+          <p>Get instant trade notifications on your phone — entry, exit, SL hit, daily P&L summary — via Telegram bot.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MARKETS ─────────────────────────────────────────────── -->
+  <section class="section section-dark" id="markets">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Markets</div>
+        <h2>One bot. Seven global markets.</h2>
+        <p>AITrabo connects to your IBKR account and trades whichever market you choose.</p>
+      </div>
+      <div class="markets-grid">
+        <div class="market-card">
+          <div class="market-flag">🇺🇸</div>
+          <div class="market-name">United States</div>
+          <div class="market-detail">NYSE · NASDAQ · CBOE</div>
+          <div class="market-detail">SPY · QQQ · AAPL · NVDA</div>
+        </div>
+        <div class="market-card">
+          <div class="market-flag">🇪🇺</div>
+          <div class="market-name">Europe</div>
+          <div class="market-detail">Xetra · Euronext</div>
+          <div class="market-detail">EXS1 · EXH7 · EXV1</div>
+        </div>
+        <div class="market-card">
+          <div class="market-flag">🇬🇧</div>
+          <div class="market-name">United Kingdom</div>
+          <div class="market-detail">London Stock Exchange</div>
+          <div class="market-detail">ISF · IUKP · IUKD</div>
+        </div>
+        <div class="market-card">
+          <div class="market-flag">🇨🇦</div>
+          <div class="market-name">Canada</div>
+          <div class="market-detail">TSX · TSX Venture</div>
+          <div class="market-detail">XIU · ZEB · XEG</div>
+        </div>
+        <div class="market-card">
+          <div class="market-flag">🇦🇺</div>
+          <div class="market-name">Australia</div>
+          <div class="market-detail">ASX</div>
+          <div class="market-detail">STW · MVB · OZR</div>
+        </div>
+        <div class="market-card">
+          <div class="market-flag">🇭🇰</div>
+          <div class="market-name">Hong Kong</div>
+          <div class="market-detail">SEHK</div>
+          <div class="market-detail">2800 · 2828 · 2845</div>
+        </div>
+        <div class="market-card">
+          <div class="market-flag">🇸🇬</div>
+          <div class="market-name">Singapore</div>
+          <div class="market-detail">SGX</div>
+          <div class="market-detail">ES3 · CLR · O87</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ─────────────────────────────────────────────── -->
+  <section class="section" id="how">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">How it Works</div>
+        <h2>Up and running in 3 steps</h2>
+        <p>No coding. No complex setup. Just connect your IBKR account and let AITrabo trade for you.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3>Download & Install</h3>
+          <p>Download the AITrabo desktop app for Windows or Mac. Run the setup wizard — takes under 5 minutes.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3>Connect IBKR</h3>
+          <p>Enter your IBKR credentials. Start with paper trading to see real signals with zero risk before going live.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3>Let it Trade</h3>
+          <p>Set your capital, risk %, and preferred strategies. AITrabo scans the market every 15 minutes and trades automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STRATEGIES ─────────────────────────────────────────────── -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Strategies</div>
+        <h2>15 professional options strategies</h2>
+        <p>The AI selects the best strategy based on market regime, IV rank, trend, and sector momentum.</p>
+      </div>
+      <div class="strategies-wrap">
+        <div class="strategy-pill">Iron Condor</div>
+        <div class="strategy-pill">Iron Butterfly</div>
+        <div class="strategy-pill">Bull Call Spread</div>
+        <div class="strategy-pill">Bear Put Spread</div>
+        <div class="strategy-pill">Bear Call Spread</div>
+        <div class="strategy-pill">Bull Put Spread</div>
+        <div class="strategy-pill">Calendar Spread</div>
+        <div class="strategy-pill">Buy Call</div>
+        <div class="strategy-pill">Buy Put</div>
+        <div class="strategy-pill">Sell Call</div>
+        <div class="strategy-pill">Sell Put</div>
+        <div class="strategy-pill">Sell Straddle</div>
+        <div class="strategy-pill">Sell Strangle</div>
+        <div class="strategy-pill">Butterfly Spread</div>
+        <div class="strategy-pill">Jade Lizard</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRICING ─────────────────────────────────────────────── -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Pricing</div>
+        <h2>Simple, transparent pricing</h2>
+        <p>One plan. Everything included. Cancel anytime.</p>
+      </div>
+      <div class="pricing-wrap">
+        <div class="pricing-card">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-plan">AITrabo Pro</div>
+          <div class="pricing-amount">$49<span>/month</span></div>
+          <div class="pricing-trial">7-day free trial · No credit card required</div>
+          <ul class="pricing-features">
+            <li>✅ All 15 trading strategies</li>
+            <li>✅ AI signal engine</li>
+            <li>✅ Option chart analysis</li>
+            <li>✅ 7 global markets</li>
+            <li>✅ Desktop app (Windows + Mac)</li>
+            <li>✅ Real-time dashboard & charts</li>
+            <li>✅ Telegram trade alerts</li>
+            <li>✅ Paper + live trading modes</li>
+            <li>✅ Automatic trailing stop-loss</li>
+            <li>✅ Priority support</li>
+          </ul>
+          <a href="https://whop.com" target="_blank" class="btn btn-primary btn-lg btn-full">Start Free Trial →</a>
+          <div class="pricing-note">Billed monthly · Cancel anytime · IBKR account required</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ─────────────────────────────────────────────── -->
+  <section class="section section-dark" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">FAQ</div>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">Do I need a coding background to use AITrabo?</div>
+          <div class="faq-a">No. AITrabo comes with a desktop app and setup wizard. You just enter your settings — no Python, no terminal, no coding required.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do I need an Interactive Brokers account?</div>
+          <div class="faq-a">Yes. AITrabo connects to IBKR via their official API (TWS/Gateway). IBKR accounts are free to open. You can start with a paper trading account at zero cost.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How much capital do I need?</div>
+          <div class="faq-a">IBKR requires a $10,000 minimum for margin accounts. However, AITrabo works with any capital size — you set the risk per trade in the settings.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Does the bot trade 24/7?</div>
+          <div class="faq-a">AITrabo trades during regular market hours for your selected market. It scans every 15 minutes during market hours and exits positions before close if configured.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is my IBKR account safe?</div>
+          <div class="faq-a">Yes. AITrabo runs entirely on your own computer — your credentials never leave your machine. We have zero access to your account.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I run it on paper trading first?</div>
+          <div class="faq-a">Absolutely. AITrabo has a paper trading mode built in. We strongly recommend running it on paper for at least 2-4 weeks before going live.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What if I want to cancel?</div>
+          <div class="faq-a">Cancel anytime from your Whop dashboard — no questions asked, no penalty. Your subscription ends at the next billing date.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BANNER ─────────────────────────────────────────────── -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <h2>Ready to automate your options trading?</h2>
+      <p>Join traders across 7 markets using AITrabo. Start your free 7-day trial today.</p>
+      <a href="#pricing" class="btn btn-primary btn-lg">Get Started Free →</a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="#" class="logo">AI<span>Trabo</span></a>
+        <p>AI-powered options trading bot for Interactive Brokers. Trade smarter, not harder.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-col-title">Product</div>
+          <a href="#features">Features</a>
+          <a href="#markets">Markets</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#how">How it Works</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Support</div>
+          <a href="#faq">FAQ</a>
+          <a href="mailto:sahilsamal1992@gmail.com">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2026 AITrabo. All rights reserved.</span>
+        <span class="footer-disc">Trading involves risk. Past performance is not indicative of future results. AITrabo does not provide financial advice.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
